@@ -1,28 +1,321 @@
-💗 Sweet K💋ss ✨
-Início Produtos Contato
-Seu brilho,
-seu estilo ✨
-Descubra nossa coleção de glosses super brilhantes, delicados e perfeitos para qualquer ocasião.
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-🛍️ Comprar agora
-Glosses Sweet Kiss
-✨ Nossos Glosses ✨
-Sparkle Kiss
-Sparkle Kiss
-Gloss com glitter colorido para brilhar sempre.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Kiss 💋</title>
 
-R$ 29,90
-🛒 Comprar
-Love Shine
-Love Shine
-Gloss perolado com brilho encantador.
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-R$ 32,90
-🛒 Comprar
-Glimmer Heart
-Glimmer Heart
-Gloss dourado para um glow perfeito.
+        html {
+            scroll-behavior: smooth;
+        }
 
-R$ 34,90
-🛒 Comprar
-💗 Sweet Kiss © 2026 - Brilhe do seu jeito! ✨
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7fb;
+            color: #5a1739;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff4f9a, #f52c80);
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 38px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 520px;
+            padding: 60px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            background: linear-gradient(90deg, #ffe9f2, #ffd3e5);
+        }
+
+        .texto {
+            width: 45%;
+        }
+
+        .texto h1 {
+            font-family: Georgia, serif;
+            font-size: 60px;
+            line-height: 1.1;
+            color: #d51f6d;
+            margin-bottom: 20px;
+        }
+
+        .texto p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #ed2676;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #c9185e;
+            transform: scale(1.05);
+        }
+
+        .imagem-principal {
+            width: 50%;
+        }
+
+        .imagem-principal img {
+            width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(150, 50, 90, 0.20);
+        }
+
+        .produtos {
+            padding: 60px 7%;
+            text-align: center;
+        }
+
+        .produtos h2 {
+            font-family: Georgia, serif;
+            font-size: 38px;
+            color: #d51f6d;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 290px;
+            padding: 18px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(200, 50, 100, 0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: contain;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-family: Georgia, serif;
+            font-size: 23px;
+            color: #df216d;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            color: #df216d;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        footer {
+            background: #d91d70;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .texto,
+            .imagem-principal {
+                width: 100%;
+            }
+
+            .texto h1 {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            💗 Sweet K💋ss ✨
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+
+        <div class="texto">
+            <h1>
+                Seu brilho,<br>
+                seu estilo ✨
+            </h1>
+
+            <p>
+                Descubra nossa coleção de glosses
+                super brilhantes, delicados e
+                perfeitos para qualquer ocasião.
+            </p>
+
+            <a href="#produtos" class="botao">
+                🛍️ Comprar agora
+            </a>
+        </div>
+
+        <div class="imagem-principal">
+            <img src="glosses.png" alt="Glosses Sweet Kiss">
+        </div>
+
+    </section>
+
+    <section class="produtos" id="produtos">
+
+        <h2>
+            ✨ Nossos Glosses ✨
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="glosses.png" alt="Sparkle Kiss">
+
+                <h3>
+                    Sparkle Kiss
+                </h3>
+
+                <p>
+                    Gloss com glitter colorido
+                    para brilhar sempre.
+                </p>
+
+                <div class="preco">
+                    R$ 29,90
+                </div>
+
+                <a href="#" class="botao">
+                    🛒 Comprar
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="glosses.png" alt="Love Shine">
+
+                <h3>
+                    Love Shine
+                </h3>
+
+                <p>
+                    Gloss perolado com brilho
+                    encantador.
+                </p>
+
+                <div class="preco">
+                    R$ 32,90
+                </div>
+
+                <a href="#" class="botao">
+                    🛒 Comprar
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="glosses.png" alt="Glimmer Heart">
+
+                <h3>
+                    Glimmer Heart
+                </h3>
+
+                <p>
+                    Gloss dourado para um
+                    glow perfeito.
+                </p>
+
+                <div class="preco">
+                    R$ 34,90
+                </div>
+
+                <a href="#" class="botao">
+                    🛒 Comprar
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="contato">
+        💗 Sweet Kiss © 2026 - Brilhe do seu jeito! ✨
+    </footer>
+
+</body>
+
+</html>
